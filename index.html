@@ -290,8 +290,101 @@
 				width: 100px; /* Change this value to make the image bigger or smaller */
 				height: auto; /* Maintain the aspect ratio */
 			}
+			
+			/* Styles for small devices (less than 768px wide) */
+			@media (max-width: 767px) {
+				.education-item,
+				.experience-item,
+				.project-item,
+				.certification-item {
+					padding: 1em; /* Adjust padding for better spacing */
+				}
+				
+				.education-details-container,
+				.experience-details-container,
+				.project-details-container,
+				.certification-details-container {
+					flex-direction: column; /* Stack details vertically */
+				}
+				
+				.project-details {
+					margin-bottom: 1em; /* Space out project details */
+				}
+				
+				.project-image {
+					margin-top: 1em; /* Add margin to project image */
+				}
+			}
+			
+			/* Styles for medium devices (768px and above) */
+			@media (min-width: 768px) {
+				.education-item,
+				.experience-item,
+				.project-item,
+				.certification-item {
+					display: flex;
+					flex-direction: column;
+					align-items: stretch; /* Adjust items to stretch vertically */
+				}
+				
+				.education-details-container,
+				.experience-details-container,
+				.project-details-container,
+				.certification-details-container {
+					flex-direction: row; /* Arrange details side by side */
+					justify-content: space-between; /* Space out details */
+				}
+				
+				.project-details {
+					flex: 1; /* Allow project details to grow */
+					margin-right: 1em; /* Add margin between details and image */
+				}
+				
+				.project-image {
+					flex: 0 0 auto;
+					width: 30%; /* Adjust image width */
+					max-width: 200px; /* Limit maximum image width */
+					margin-top: 0; /* Remove top margin */
+				}
+			}
 
-		
+			   /* Hide project images on small devices */
+			   @media (max-width: 767px) {
+				.project-image {
+					display: none; /* Hide project images */
+				}
+			}
+
+			
+   /* Font sizes and styles for small devices (less than 768px wide) */
+   @media (max-width: 767px) {
+	body {
+		font-size: 14px; /* Smaller font size for body */
+	}
+
+	/* Adjust specific sections as needed */
+	.education-item h3,
+	.experience-item h3,
+	.project-item h3,
+	.certification-item h3 {
+		font-size: 0.9em; /* Smaller font size for h3 */
+		font-weight: 500; /* Adjust font-weight for slightly lighter boldness */
+	}
+
+	.education-item p,
+	.experience-item p,
+	.project-item p,
+	.certification-item p {
+		font-size: 0.9em; /* Smaller font size for paragraphs */
+	}
+}
+
+@media (max-width: 767px) {
+	.technology-button {
+		margin-bottom: 10px; /* Adjust margin-bottom to create vertical space between buttons */
+	}
+}
+
         </style>
 
 
