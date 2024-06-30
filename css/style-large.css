@@ -42,3 +42,9 @@
 		padding: 6em 3em 3em 3em;
 		width: calc(100% - 30%);
 	}
+	#header {
+		width: 400px;
+	}
+	#footer {
+		width: 400px;
+	}

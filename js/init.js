@@ -12,13 +12,13 @@
 			parallax: true,
 
 		// Parallax factor (lower = more intense, higher = less intense).
-			parallaxFactor: 20
+			parallaxFactor: 10
 
 	};
 
 	skel.init({
 		reset: 'full',
-		containers: '100%',
+		containers: '50%',
 		breakpoints: {
 			global: { href: 'css/style.css', grid: { gutters: ['2.5em', 0] } },
 			xlarge: { media: '(max-width: 1800px)', href: 'css/style-xlarge.css' },
