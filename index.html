@@ -1,0 +1,529 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Portfolio of Md.Mominul Islam</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Portfolio of Md. Mominul Islam, Data Scientist" />
+        <meta name="keywords" content="data science, machine learning, data analysis, portfolio, daffodil international university , bangladeshi data analyst, web scrapper" />
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.poptrox.min.js"></script>
+        <script src="js/skel.min.js"></script>
+        <script src="js/init.js"></script>
+        <!--favicon-->
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-b0HFAbpw3XQ3U6SWLAfkl2YkDw/H3C2vA9MkY7j7H/1HshB/dA+fPohAIvLzCBtjOSLmy8He7G5BzRUqHbS3qg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <noscript>
+            <link rel="stylesheet" href="css/skel.css" />
+            <link rel="stylesheet" href="css/style.css" />
+            <link rel="stylesheet" href="css/style-xlarge.css" />
+        </noscript>
+        <style>
+			.education-section {
+				padding: 2em 0;
+				background: #ffffff;
+				border-top: 1px solid #e5e5e5;
+				border-bottom: 1px solid #ffffff;
+			}
+			
+			hr {
+				visibility: hidden;
+				height:10px;
+				margin: 0;
+			}
+			.education-item {
+				margin-bottom: 2em;
+				padding: 1em;
+				background: #fff;
+				border: 1px solid #ddd;
+				border-radius: 5px;
+				box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+			}
+			
+			.education-item h3 {
+				margin: 0;
+				font-size: 1.5em;
+				color: #333;
+			}
+			
+			.education-details-container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			
+			.education-item p {
+				margin: 0.5em 0 1em;
+				color: #666;
+				font-size: 1em;
+			}
+			
+			.gpa-details {
+				text-align: right;
+				font-size: 1em;
+				color: #444;
+			}
+			
+			.gpa-details p {
+				margin: 0;
+			}
+			
+			.education-details {
+				list-style-type: disc;
+				margin-left: 1.5em;
+				color: #444;
+			}
+			
+			.education-details li {
+				margin-bottom: 0em;
+			}
+			.experience-section {
+				padding: 2em 0;
+				background: #ffffff;
+				border-top: 1px solid #e5e5e5;
+				border-bottom: 1px solid #ffffff;
+			}
+			
+			.experience-item {
+				margin-bottom: 2em;
+				padding: 1em;
+				background: #fff;
+				border: 1px solid #ddd;
+				border-radius: 5px;
+				box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+			}
+			
+			.experience-item h3 {
+				margin: 0;
+				font-size: 1.5em;
+				color: #333;
+			}
+			
+			.experience-details-container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			
+			.experience-item p {
+				margin: 0.5em 0 1em;
+				color: #666;
+				font-size: 1em;
+			}
+			
+			.experience-location {
+				text-align: right;
+				font-size: 1em;
+				color: #444;
+			}
+			
+			.experience-location p {
+				margin: 0;
+			}
+			
+			.experience-details {
+				list-style-type: disc;
+				margin-left: 1.5em;
+				color: #444;
+			}
+			
+			.experience-details li {
+				margin-bottom: 0.5em;
+			}
+
+			.certifications-section {
+				padding: 2em 0;
+				background: #ffffff;
+				border-top: 1px solid #bcbcbc;
+				
+			}
+			
+			.certification-item {
+				margin-bottom: 2em;
+				padding: 1em;
+				background: #ffffff;
+				border: 1px solid #ffffff;
+				border-radius: 10px;
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.249);
+				transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+			}
+			
+			.certification-item:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+			}
+			
+			.certification-item h3 {
+				margin: 0 0 0.5em;
+				font-size: 1.5em;
+				color: #333;
+			}
+			
+			.certification-details-container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			
+			.certification-item p {
+				margin: 0;
+				color: #666;
+				font-size: 1em;
+			}
+			
+			.certification-credentials {
+				font-size: 1em;
+				color: #444;
+			}
+			
+			.credential-button {
+				background-color: #007bff; /* Blue color for button */
+				color: #fff; /* White text color */
+				border: none;
+				padding: 0.75em 1.5em;
+				border-radius: 4px;
+				cursor: pointer;
+				transition: background-color 0.3s ease-in-out;
+			}
+			
+			.credential-button:hover {
+				background-color: #0056b3; /* Darker blue on hover */
+			}
+			.projects-section {
+				padding: 2em 0;
+				background: #ffffff;
+				border-top: 1px solid #e5e5e5;
+				border-bottom: 1px solid #ffffff;
+			}
+			
+			.project-item {
+				display: flex;
+				align-items: center;
+				margin-bottom: 2em;
+				padding: 1em;
+				background: #fff;
+				border: 1px solid #ddd;
+				border-radius: 5px;
+				box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+			}
+			
+			.project-details-container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				width: 100%;
+				flex-wrap: wrap; /* Allow wrapping for better responsiveness */
+			}
+			
+			.project-details {
+				flex: 1;
+				min-width: 300px; /* Ensure the project details have a minimum width */
+			}
+			
+			.project-details h3 {
+				margin: 0;
+				font-size: 1.5em;
+				color: #333;
+			}
+			
+			.project-details p {
+				margin-bottom: 0.5em;
+				color: #666;
+			}
+			
+			.technologies {
+				margin-bottom: 1em;
+			}
+			
+			.technology-button {
+				background-color: #007bff; /* Blue color for button */
+				color: #fff; /* White text color */
+				border: none;
+				padding: 0.5em 1em;
+				margin-right: 0.5em;
+				border-radius: 4px;
+				cursor: pointer;
+				transition: background-color 0.3s ease-in-out;
+			}
+			
+			.technology-button:hover {
+				background-color: #0056b3; /* Darker blue on hover */
+			}
+			
+			.github-link {
+				margin-top: 1em;
+			}
+			
+			.github-link a {
+				text-decoration: none;
+			}
+			
+			.github-icon {
+				width: 15px;
+				height: 15px;
+				fill: #333;
+				transition: fill 0.3s ease-in-out;
+			}
+			
+			.github-link a:hover .github-icon {
+				fill: #007bff; /* Blue color on hover */
+			}
+			
+			.project-image {
+				flex: 0 0 auto;
+				margin-left: 1em;
+				max-width: 200px; /* Adjust image width as needed */
+				min-width: 150px; /* Ensure a minimum width for smaller screens */
+				margin-right: 15px;
+			}
+			
+			.project-image img {
+				width: 100%;
+				height: auto;
+				border-radius: 5px;
+				box-shadow: 0 1px 3px rgba(0, 0, 0, 0.349);
+			}
+		
+			.image.avatar img {
+				width: 100px; /* Change this value to make the image bigger or smaller */
+				height: auto; /* Maintain the aspect ratio */
+			}
+        </style>
+
+
+        <!-- Hotjar Tracking Code for www.mominulislam.cf -->
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:784866,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
+        <!-- ManyChat -->
+        <script src="//widget.manychat.com/737956546386084.js" async="async"></script>
+    </head>
+    <body id="top">
+        <!-- Header -->
+        <header id="header">
+            <a href="#" class="image avatar"><img src="images/avatar.png" alt=""/></a>
+            <h1><strong>Md.Mominul Islam</strong>
+			
+				<br/>
+                Data Scientist<br/>
+            </h1>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+
+          <!-- One -->
+<section id="one">
+    <header class="major">
+        <h2>About Me<br /></h2>
+    </header>
+    <p>A passionate Data Scientist with expertise in machine learning, data analysis, and predictive modeling. With a Bachelor's degree in Computer Science & Engineering and hands-on experience in Python and SQL, I excel in deriving actionable insights from complex datasets. I have a proven track record in leading data-driven projects and implementing innovative solutions that drive business growth and efficiency. Let's explore the transformative power of data together.
+
+	</p>
+	<hr>
+    <ul class="actions">
+        <li><a href="#experience" class="button">Experience</a></li>
+        <li><a href="#education" class="button">Education</a></li>
+	
+        <li><a href="#projects" class="button">Projects</a></li>
+		
+        <li><a href="#certifications" class="button">Certification</a></li>
+        <hr>
+		<li><a  href="./CV of Md.Mominul Islam.pdf" class="button" download="Mominul_Islam_CV.pdf" class="button">Download CV</a></li>
+		<li><a href="#Five" class="button">Get In Touch</a></li>
+	</ul>
+</section>
+
+			<!-- Experience -->
+	<section id="experience" class="experience-section">
+		<h2>Experience</h2>
+		<div class="experience-item">
+			<h3>Data Annotator</h3>
+			<div class="experience-details-container">
+				<p>Quantigo AI, 2019 - Present</p>
+			</div>
+			<ul class="experience-details">
+				<li>Led a team of data annotators responsible for labeling large datasets for machine learning projects.</li>
+				<li>Conducted regular audits and provided feedback to annotators to maintain high data quality standards.</li>
+			</ul>
+		</div>
+		<!-- add more exp here  -->
+	</section>
+
+			
+	<!-- Education -->
+		<section id="education" class="education-section">
+			<h2>Education</h2>
+			<div class="education-item">
+				<h3>Bachelor's in Computer Science & Engineering</h3>
+				<div class="education-details-container">
+					<p>Daffodil International University, 2022 - 2026</p>
+					<div class="gpa-details">
+						
+						<p>CGPA: 3.99/4.00</p>
+					</div>
+				</div>
+				<!-- <ul class="education-details">
+					<li>Specialized in Machine Learning and Data Analysis</li>
+					<li>Thesis: Predictive Modeling in Healthcare</li>
+					<li>Relevant Courses: Advanced Statistics, Big Data Analytics</li>
+				</ul> -->
+			</div>
+			<div class="education-item">
+				<h3>Higher Secondary School Certificate</h3>
+				<div class="education-details-container">
+					<p>Mohammadpur Preparetory School & College, 2019 - 2021</p>
+					<div class="gpa-details">
+						<p>GPA: 5.00/5.00</p>
+					</div>
+				</div>
+				<!-- <ul class="education-details">
+					<li>Graduated with Honors</li>
+					<li>Capstone Project: AI-Based Traffic Management System</li>
+					<li>Relevant Courses: Algorithms, Data Structures, Database Systems</li>
+				</ul> -->
+			</div>
+			<div class="education-item">
+				<h3>Secondary School Certificate</h3>
+				<div class="education-details-container">
+					<p>B.C.S.I.R High School, 2009 - 2019</p>
+					<div class="gpa-details">
+						<p>GPA: 4.61/5.00</p>
+					</div>
+				</div>
+				<!-- <ul class="education-details">
+					<li>Graduated with Honors</li>
+					<li>Capstone Project: AI-Based Traffic Management System</li>
+					<li>Relevant Courses: Algorithms, Data Structures, Database Systems</li>
+				</ul> -->
+			</div>
+		</section>
+		<section id="projects" class="projects-section">
+			<h2>Projects</h2>
+			
+			<div class="project-item">
+				<div class="project-details-container">
+					<div class="project-details">
+						<h3>Real-time Airbnb Data Scrapper</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam assumenda corrupti voluptate in adipisci fuga dignissimos. Iure in quod dolorem.</p>
+						<div class="technologies">
+							<button class="technology-button">Python</button>
+							<button class="technology-button">Selenium</button>
+							<button class="technology-button">Pandas</button>
+							<button class="technology-button">Numpy</button>
+						</div>
+						<div class="github-link">
+							<a href="https://github.com/mominulislam2001/BloodDonation_Management_System_Java_OOP_DatabaseSQL" target="_blank">
+								Github . 
+								<svg class="github-icon" viewBox="0 0 16 16" version="1.1" aria-hidden="true">
+									<path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.001 8.001 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="project-image">
+						<img src="./images/fulls/01.jpg" alt="Customer Segmentation">
+					</div>
+				</div>
+			</div>
+			
+			<!-- Repeat similar structure for other projects -->
+			
+		</section>
+		
+		
+		
+		
+		
+		
+
+					
+		<!-- Certifications -->
+		<section id="certifications" class="certifications-section">
+			<h2>Certifications</h2>
+			<div class="certification-item">
+				<h3>IBM AI Engineering Professional Certificate</h3>
+				<div class="certification-details-container">
+					<p> IBM | Coursera</p>
+					<div class="certification-credentials">
+						<button class="credential-button"><a href="https://coursera.org/share/750521bd3f86db909dfb12a4cee98931" target="_blank" style="color: white;">View Credential</a></button>
+					</div>
+				</div>
+			</div>
+			<div class="certification-item">
+				<h3>Applied Data Science Lab</h3>
+				<div class="certification-details-container">
+					<p> WorldQuant University</p>
+					<div class="certification-credentials">
+						<button class="credential-button"><a href="https://www.credly.com/badges/233d273d-dbf9-4a79-8477-41ee85694706/public_url" target="_blank" style="color: white;">View Credential</a></button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+           
+            <!-- Five -->
+            <section id="Five">
+                <h2>Get In Touch</h2>
+                <p>If you want to hire me or have any questions about my work, please contact me through my email or LinkedIn.</p>
+                <div class="row">
+                    <div class="4u$ 12u$(small)">
+                        <ul class="labeled-icons">
+                            <li>
+                                <h3 class="icon fa-home"><span class="label">Address</span></h3>
+                                Kalyanpur, Dhaka
+                            </li>
+                            <li>
+                                <h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
+                                +8801611655192
+                            </li>
+                            <li>
+                                <h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
+                                <a href="mailto:islamayan123456@gmail.com">islamayan123456@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <h4>Contact Me</h4>
+                <li><a href="https://www.facebook.com/ayanstheitc/" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="https://github.com/mominulislam2001" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+                <li><a href="https://www.linkedin.com/in/mominul2001/" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://www.messenger.com/t/100012671226294/" target="_blank" class="icon fa-envelope-o"><span class="label">Messenger</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; All Rights Reserved</li><li>Md.Mominul Islam</li>
+            </ul>
+        </footer>
+
+        <!-- Start of Tawk.to Script -->
+        <!-- Start of Zendesk Chat Script -->
+        <script type="text/javascript">
+            window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+            d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+            _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+            $.src="https://v2.zopim.com/?5U4stOFuB2m4Jef1EiwR2O3ISo4ksFUc";z.t=+new Date;$.
+            type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+        </script>
+        <!-- End of Zendesk Chat Script -->
+        <!-- End of Tawk.to Script -->
+    </body>
+</html>
