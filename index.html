@@ -385,6 +385,47 @@
 	}
 }
 
+/* General section styling */
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Skills section styling */
+.skills-section .skill-category {
+    margin-bottom: 20px;
+}
+
+.skills-section .skill-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-section button {
+    background-color: #ffffff;
+    color: #333333;
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.skills-section button:hover {
+    background-color: #f0f0f0;
+    border-color: #aaaaaa;
+    color: #000000;
+}
+
+
         </style>
 
 
@@ -441,116 +482,190 @@
 		<!-- add more exp here  -->
 	</section>
 
-			
-	<!-- Education -->
-		<section id="education" class="education-section">
-			<h2>Education</h2>
-			<div class="education-item">
-				<h3>Bachelor's in Computer Science & Engineering</h3>
-				<div class="education-details-container">
-					<p>Daffodil International University, 2022 - 2026</p>
-					<div class="gpa-details">
-						
-						<p>CGPA: 3.99/4.00</p>
-					</div>
-				</div>
-				<!-- <ul class="education-details">
-					<li>Specialized in Machine Learning and Data Analysis</li>
-					<li>Thesis: Predictive Modeling in Healthcare</li>
-					<li>Relevant Courses: Advanced Statistics, Big Data Analytics</li>
-				</ul> -->
-			</div>
-			<div class="education-item">
-				<h3>Higher Secondary School Certificate</h3>
-				<div class="education-details-container">
-					<p>Mohammadpur Preparetory School & College, 2019 - 2021</p>
-					<div class="gpa-details">
-						<p>GPA: 5.00/5.00</p>
-					</div>
-				</div>
-				<!-- <ul class="education-details">
-					<li>Graduated with Honors</li>
-					<li>Capstone Project: AI-Based Traffic Management System</li>
-					<li>Relevant Courses: Algorithms, Data Structures, Database Systems</li>
-				</ul> -->
-			</div>
-			<div class="education-item">
-				<h3>Secondary School Certificate</h3>
-				<div class="education-details-container">
-					<p>B.C.S.I.R High School, 2009 - 2019</p>
-					<div class="gpa-details">
-						<p>GPA: 4.61/5.00</p>
-					</div>
-				</div>
-				<!-- <ul class="education-details">
-					<li>Graduated with Honors</li>
-					<li>Capstone Project: AI-Based Traffic Management System</li>
-					<li>Relevant Courses: Algorithms, Data Structures, Database Systems</li>
-				</ul> -->
-			</div>
-		</section>
-		<section id="projects" class="projects-section">
-			<h2>Projects</h2>
-			
-			<div class="project-item">
-				<div class="project-details-container">
-					<div class="project-details">
-						<h3>Real-time Airbnb Data Scrapper</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam assumenda corrupti voluptate in adipisci fuga dignissimos. Iure in quod dolorem.</p>
-						<div class="technologies">
-							<button class="technology-button">Python</button>
-							<button class="technology-button">Selenium</button>
-							<button class="technology-button">Pandas</button>
-							<button class="technology-button">Numpy</button>
-						</div>
-						<div class="github-link">
-							<a href="https://github.com/mominulislam2001/BloodDonation_Management_System_Java_OOP_DatabaseSQL" target="_blank">
-								Github . 
-								<svg class="github-icon" viewBox="0 0 16 16" version="1.1" aria-hidden="true">
-									<path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.001 8.001 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
-								</svg>
-							</a>
-						</div>
-					</div>
-					<div class="project-image">
-						<img src="./images/fulls/01.jpg" alt="Customer Segmentation">
-					</div>
-				</div>
-			</div>
-			
-			<!-- Repeat similar structure for other projects -->
-			
-		</section>
-		
-		
-		
-		
-		
-		
 
-					
-		<!-- Certifications -->
-		<section id="certifications" class="certifications-section">
-			<h2>Certifications</h2>
-			<div class="certification-item">
-				<h3>IBM AI Engineering Professional Certificate</h3>
-				<div class="certification-details-container">
-					<p> IBM | Coursera</p>
-					<div class="certification-credentials">
-						<button class="credential-button"><a href="https://coursera.org/share/750521bd3f86db909dfb12a4cee98931" target="_blank" style="color: white;">View Credential</a></button>
+
+			
+       <!-- Education -->
+	   <section id="education" class="education-section">
+		<h2>Education</h2>
+		<div class="education-item">
+			<h3>Bachelor's in Computer Science & Engineering</h3>
+			<div class="education-details-container">
+				<p>Daffodil International University, 2022 - 2026</p>
+				<div class="gpa-details">
+					<p>CGPA: 3.99/4.00</p>
+				</div>
+			</div>
+		</div>
+		<div class="education-item">
+			<h3>Higher Secondary School Certificate</h3>
+			<div class="education-details-container">
+				<p>Mohammadpur Preparetory School & College, 2019 - 2021</p>
+				<div class="gpa-details">
+					<p>GPA: 5.00/5.00</p>
+				</div>
+			</div>
+		</div>
+		<div class="education-item">
+			<h3>Secondary School Certificate</h3>
+			<div class="education-details-container">
+				<p>B.C.S.I.R High School, 2009 - 2019</p>
+				<div class="gpa-details">
+					<p>GPA: 4.61/5.00</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Projects -->
+	<section id="projects" class="projects-section">
+		<h2>Projects</h2>
+		<div class="project-item">
+			<div class="project-details-container">
+				<div class="project-details">
+					<h3>Potato Disease Detection Model Using CNN</h3>
+					<p>Developed a Convolutional Neural Network model using TensorFlow for detecting diseases in potato plants.</p>
+					<div class="technologies">
+						<button class="technology-button">TensorFlow</button>
+						<button class="technology-button">CNN</button>
+						<button class="technology-button">Python</button>
 					</div>
 				</div>
 			</div>
-			<div class="certification-item">
-				<h3>Applied Data Science Lab</h3>
-				<div class="certification-details-container">
-					<p> WorldQuant University</p>
-					<div class="certification-credentials">
-						<button class="credential-button"><a href="https://www.credly.com/badges/233d273d-dbf9-4a79-8477-41ee85694706/public_url" target="_blank" style="color: white;">View Credential</a></button>
+		</div>
+		<div class="project-item">
+			<div class="project-details-container">
+				<div class="project-details">
+					<h3>Heart Disease Prediction Model Using Ensemble Learning</h3>
+					<p>Implemented an ensemble learning model to predict heart diseases using various machine learning algorithms.</p>
+					<div class="technologies">
+						<button class="technology-button">Ensemble Learning</button>
+						<button class="technology-button">Machine Learning</button>
+						<button class="technology-button">Python</button>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
+		<div class="project-item">
+			<div class="project-details-container">
+				<div class="project-details">
+					<h3>Customer Churn Prediction With Synthetic Data</h3>
+					<p>Created a machine learning model to predict customer churn using synthetic data processing techniques.</p>
+					<div class="technologies">
+						<button class="technology-button">Synthetic Data</button>
+						<button class="technology-button">Machine Learning</button>
+						<button class="technology-button">Python</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="project-item">
+			<div class="project-details-container">
+				<div class="project-details">
+					<h3>Real-Time Airbnb Scrapper App | Sentimental Modeling</h3>
+					<p>A real time dashboard to fetch airbnb data using selenium pipeline along with a predictive review modeling</p>
+					<div class="technologies">
+						<button class="technology-button">Selenium</button>
+						<button class="technology-button">Pandas</button>
+						<button class="technology-button">Numpy</button>
+						<button class="technology-button">Sentiment Analysis</button>
+						<button class="technology-button">Dashboard</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="project-item">
+			<div class="project-details-container">
+				<div class="project-details">
+					<h3>Abdomen Disease Detection Using Transfer Learning</h3>
+					<p>Utilized transfer learning models like ResNet50 and VGG16 for detecting diseases in abdomen images.</p>
+					<div class="technologies">
+						<button class="technology-button">Transfer Learning</button>
+						<button class="technology-button">ResNet50</button>
+						<button class="technology-button">VGG16</button>
+						<button class="technology-button">Deep Learning</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+		<!-- Skills -->
+	<section id="skills" class="skills-section">
+		<h2>Skills</h2>
+		<div class="skill-category">
+			<h3>Programming Languages</h3>
+			<div class="skill-buttons">
+				
+				<button>Python</button>
+				<button>C/C++</button>
+				<button>Java</button>
+				<button>SQL</button>
+				<button>HTML/CSS</button>
+				
+			</div>
+		</div>
+		<div class="skill-category">
+			<h3>Python Libraries</h3>
+			<div class="skill-buttons">
+				<button>NumPy</button>
+				<button>Pandas</button>
+				<button>Scikit-Learn</button>
+				<button>Matplotlib / Seaborn</button>
+				<button>PyTorch</button>
+			</div>
+		</div>
+		<div class="skill-category">
+			<h3>Software Skills</h3>
+			<div class="skill-buttons">
+				<button>Adobe XD</button>
+				<button>Figma</button>
+				<button>Microsoft Office</button>
+			
+			</div>
+		</div>
+	</section>
+
+	<!-- Certifications -->
+	<section id="certifications" class="certifications-section">
+		<h2>Certifications</h2>
+		<div class="certification-item">
+			<h3>IBM AI Engineering</h3>
+			<div class="certification-details-container">
+				<p>Coursera | IBM, October 2023</p>
+				<div class="certification-credentials">
+					<button class="credential-button"><a href="https://coursera.org/share/750521bd3f86db909dfb12a4cee98931" target="_blank" style="color: white;">View Credential</a></button>
+				</div>
+			</div>
+		</div>
+		<div class="certification-item">
+			<h3>Data Science Career Track</h3>
+			<div class="certification-details-container">
+				<p>Data Science 365, November 2023</p>
+				<div class="certification-credentials">
+					<button class="credential-button"><a href="https://learn.365datascience.com/certificates/DD-253C90DD08/" target="_blank" style="color: white;">View Credential</a></button>
+				</div>
+			</div>
+		</div>
+		<div class="certification-item">
+			<h3>Applied Data Science Lab</h3>
+			<div class="certification-details-container">
+				<p>WorldQuant University, March 2024</p>
+				<div class="certification-credentials">
+					<button class="credential-button"><a href="https://www.credly.com/badges/233d273d-dbf9-4a79-8477-41ee85694706/public_url" target="_blank" style="color: white;">View Credential</a></button>
+				</div>
+			</div>
+		</div>
+		<div class="certification-item">
+			<h3>Front-End Web Development with React</h3>
+			<div class="certification-details-container">
+				<p>The Hong Kong University of Science and Technology, January 2023</p>
+				<div class="certification-credentials">
+					<button class="credential-button"><a href="https://www.coursera.org/account/accomplishments/verify/DK4R7VMWJQ2W" target="_blank" style="color: white;">View Credential</a></button>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 
