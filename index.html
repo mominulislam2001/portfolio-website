@@ -44,7 +44,7 @@
 			
 			.education-item h3 {
 				margin: 0;
-				font-size: 1.5em;
+				font-size: 1.3em;
 				color: #333;
 			}
 			
@@ -97,7 +97,7 @@
 			
 			.experience-item h3 {
 				margin: 0;
-				font-size: 1.5em;
+				font-size: 1.3em;
 				color: #333;
 			}
 			
@@ -157,7 +157,7 @@
 			
 			.certification-item h3 {
 				margin: 0 0 0.5em;
-				font-size: 1.5em;
+				font-size: 1.3em;
 				color: #333;
 			}
 			
@@ -224,7 +224,7 @@
 			
 			.project-details h3 {
 				margin: 0;
-				font-size: 1.5em;
+				font-size: 1.3em;
 				color: #333;
 			}
 			
@@ -429,11 +429,64 @@ section h3 {
     justify-content: center; /* Center horizontally */
     margin-top: 20px; /* Optional: adjust margin as needed */
 }
+.project-item {
+    position: relative;
+    margin-bottom: 30px; /* Adjust spacing between project items */
+}
 
+
+/* Media query for smaller devices */
+/* Style the button */
+#backToTopBtn {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed position at the bottom-right corner */
+	bottom: 20px;
+	right: 30px;
+	z-index: 99; /* Ensure it is on top of other elements */
+	font-size: 15px;
+	background-color: #363636; /* Dark background color */
+	color: white; /* White text */
+	border: none; /* No border */
+	outline: none; /* No outline */
+	cursor: pointer; /* Pointer cursor on hover */
+	padding: 10px; /* Some padding */
+	border-radius: 40px; /* Rounded corners */
+  }
+  
+  #backToTopBtn:hover {
+	background-color: #333; /* Darker background on hover */
+  }
+  
+  #backToTopBtn i {
+	font-size: 24px; /* Adjust the icon size if needed */
+  }
+
+
+.link-button {
+	display: inline-block;
+	margin-top: 1px; /* Adjust spacing as needed */
+	padding: 5px 5px;
+	background-color: #ffffff00;
+	color: rgb(35, 35, 35);
+	text-decoration: none;
+	border-radius: 50px;
+	border: None;
+	align-content:flex-end;
+	
+	
+  }
+  
+
+  
+
+
+  
+ 
+  
         </style>
 
 
-       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
     <body id="top">
         <!-- Header -->
@@ -536,11 +589,14 @@ section h3 {
 				<div class="project-details">
 					<h3>Potato Disease Detection Model Using CNN</h3>
 					<p>Developed a Convolutional Neural Network model using TensorFlow for detecting diseases in potato plants.</p>
+					
 					<div class="technologies">
 						<button class="technology-button">TensorFlow</button>
 						<button class="technology-button">CNN</button>
 						<button class="technology-button">Python</button>
+						<a href="#" class="link-button"><i class="fab fa-github fa-lg"></i></a>
 					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -553,6 +609,7 @@ section h3 {
 						<button class="technology-button">Ensemble Learning</button>
 						<button class="technology-button">Machine Learning</button>
 						<button class="technology-button">Python</button>
+						<a href="#" class="link-button"><i class="fab fa-github fa-lg"></i></a>
 					</div>
 				</div>
 			</div>
@@ -566,6 +623,7 @@ section h3 {
 						<button class="technology-button">Synthetic Data</button>
 						<button class="technology-button">Machine Learning</button>
 						<button class="technology-button">Python</button>
+						<a href="#" class="link-button"><i class="fab fa-github fa-lg"></i></a>
 					</div>
 				</div>
 			</div>
@@ -581,6 +639,7 @@ section h3 {
 						<button class="technology-button">Numpy</button>
 						<button class="technology-button">Sentiment Analysis</button>
 						<button class="technology-button">Dashboard</button>
+						<a href="#" class="link-button"><i class="fab fa-github fa-lg"></i></a>
 					</div>
 				</div>
 			</div>
@@ -595,6 +654,7 @@ section h3 {
 						<button class="technology-button">ResNet50</button>
 						<button class="technology-button">VGG16</button>
 						<button class="technology-button">Deep Learning</button>
+						<a href="#" class="link-button"><i class="fab fa-github fa-lg"></i></a>
 					</div>
 				</div>
 			</div>
@@ -724,6 +784,8 @@ section h3 {
             </ul>
         </footer>
 
+		<button id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
         <!-- Start of Tawk.to Script -->
         <!-- Start of Zendesk Chat Script -->
         <script type="text/javascript">
@@ -732,7 +794,33 @@ section h3 {
             _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
             $.src="https://v2.zopim.com/?5U4stOFuB2m4Jef1EiwR2O3ISo4ksFUc";z.t=+new Date;$.
             type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
-        </script>
+				
+
+		</script>
+
+		<script>
+
+			// Get the button
+const backToTopBtn = document.getElementById("backToTopBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    backToTopBtn.style.display = "block";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document smoothly
+backToTopBtn.onclick = function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+		</script>
         <!-- End of Zendesk Chat Script -->
         <!-- End of Tawk.to Script -->
     </body>
